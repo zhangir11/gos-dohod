@@ -88,7 +88,7 @@ func main() {
 	// }
 	fmt.Println(sum)
 	str, _ := json.Marshal(binGosDoohodov)
-	f, err := os.Create("./AllBins")
+	f, err := os.Create("./AllBins.js")
 	check(err)
 	defer f.Close()
 	n2, err := f.Write(str)
